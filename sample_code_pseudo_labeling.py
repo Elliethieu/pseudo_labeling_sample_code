@@ -12,7 +12,7 @@ backbone = 'clip'
 mode = 'single'
 
 batch_size = 1900000
-# note: data loading has been dleted for safety.
+# note: data loading has been deleted for safety.
 
 # Step 6: Define the model
 #a) Linear Classifier
@@ -277,4 +277,5 @@ with torch.no_grad():
         print( "AP: ", ap, "ROC_AUC: ", roc_auc )
         result[generator] = [None, None, float(true_negative), float(false_positive), Accuracy.item(),  ap]
    
+
    #some evaluations deleted for safety
